@@ -1,0 +1,59 @@
+/* songlist.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #d0d0d0;
+    color: #2c2f35;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #2c2f35;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #04BD7D;
+    margin: 0;
+}
+
+header .back-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #04BD7D;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+header .back-link:hover {
+    background-color: #038d5b;
+}
+
+.songs .song {
+    margin-bottom: 20px;
+}
+
+.songs .song p {
+    margin: 0;
+    color: #FFFFFF;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login y Registro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="form-content" id="login-form">
+            <div class="login-logo">
+                <img src="/img/logo.png" alt="Logo">
+            </div>
+            <h1>Login</h1>
+
+            <form onsubmit="login(event)">
+                <div class="input-field">
+                    <i class="fa solid fa-user"></i>
+                    <input type="text" id="login-username" placeholder="Usuario" required>
+                </div>
+                <div class="input-field">
+                    <i class="fa solid fa-lock"></i>
+                    <input type="password" id="login-password" placeholder="Contraseña" required>
+                </div>
+                <div class="btn-field">
+                    <button type="submit">Ingresar</button>
+                </div>
+                <p>¿No tienes cuenta? <a href="#" id="show-register">Regístrate</a></p>
+            
+            </form>
+        </div>
+
+        <div class="form-content hidden" id="register-form">
+            <div class="login-logo">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+            <h1>Registro</h1>
+            <form>
+                <div class="input-field">
+                    <i class="fa solid fa-user"></i>
+                    <input type="text" id="register-username" placeholder="Usuario" required>
+                </div>
+                <div class="input-field">
+                    <i class="fa solid fa-lock"></i>
+                    <input type="password" id="register-password" placeholder="Contraseña" required>
+                </div>
+                <div class="input-field">
+                    <i class="fa solid fa-envelope"></i>
+                    <input type="email" id="register-email" placeholder="Email" required>
+                </div>
+                <div class="input-field">
+                    <i class="fa solid fa-phone"></i>
+                    <input type="tel" id="register-phone" placeholder="Teléfono" required>
+                </div>
+                <div class="input-field">
+                    <i class="fa solid fa-users"></i>
+                    <input type="text" id="register-cellphone" placeholder="Rol" required>
+                </div>
+                <div class="btn-field">
+                    <button type="submit">Registrar</button>
+                </div>
+                <p>¿Ya tienes cuenta? <a href="#" id="show-login">Ingresa</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
